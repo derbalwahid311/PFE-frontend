@@ -10,6 +10,7 @@ function Navbar({handlestate}:any){
             <a className="my-auto" href="#">
                 <div className="flex my-auto">
                     <img className="h-16 pl-8 px-3 my-2 border-r-[1px]" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1682879624/Uni_Logo_copy_n0fnmu.png" alt="logo" />
+                    
                     <div className="flex-col -space-y-1 my-auto overflow-clip  px-3">
                             <h1 className="text-xs">DEPARTMENT OF</h1>
                             <h1 className="text-2xl">COMPUTER SCIENCE</h1>
@@ -41,7 +42,7 @@ export default function LargeNavbar(){
             <Navbar handlestate={handleMenu}></Navbar>
             <AnimatePresence>
                 {open && 
-                <motion.div className="overflow-hidden absolute top-0 left-0 right-0"  initial={{y:"-100vw" }} transition={{duration:0.5}} animate={{y:"0vw"}} exit={{y:"-100vw",   transition:{duration:1.0}}}>
+                <motion.div className="overflow-hidden absolute top-0 left-0 right-0"  initial={{y:"-100vh" }} transition={{duration:0.3}} animate={{y:"0vh"}} exit={{y:"-100vh",   transition:{duration:0.3}}}>
                     <Menu state={open} handlestate={handleMenu}></Menu>
                 </motion.div>}
             </AnimatePresence>

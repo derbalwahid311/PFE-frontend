@@ -16,6 +16,8 @@ export default function Menu({state, handlestate}:any){
                         </svg>
                     </div>
                 </div>
+                
+
 
                 <div className=" text-white px-8 my-auto flex-col space-y-10 text-5xl w-fit h-fit font-[Merriweather]">
                     <h1 className="">Se Connecter</h1>
