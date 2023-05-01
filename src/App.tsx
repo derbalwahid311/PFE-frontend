@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Media from 'react-media'
 import LargeNavbar from './components/LargeNavbar';
 import MediumNavbar from './components/MediumNavbar';
+import Menu from './components/Menu';
 import SmallNavbar from './components/SmallNavbar';
 
 
