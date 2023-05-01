@@ -4,7 +4,7 @@
 
 .my-scrollbar{
     scrollbar-width: thin;
-    scrollbar-color: gray black;
+    scrollbar-color: #464a4f #292c2f;
 }
 
 .my-scrollbar::-webkit-scrollbar{
@@ -29,4 +29,12 @@ html{
     background-color: white;
     
 }
+
+
+.my-shaddow{
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    -webkit-mask-size: 100% 100%;
+    -webkit-mast-repeat: no-repeat;
+}
+
 
