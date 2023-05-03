@@ -18,8 +18,13 @@ function Navbar({handlestate}:any){
                     
                 </div>
             </a>
-            <div onClick={handlestate} className="flex cursor-pointer bg-[#2c302b] transition duration-150  hover:bg-[#474b46] px-8 space-x-5">
-                <img className="h-3 my-auto" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1682882755/Vector_l5lf1a.svg" alt="" />
+            <div onClick={handlestate} className="flex cursor-pointer bg-[#2c302b] transition duration-200  hover:bg-[#474b46] px-8 space-x-5">
+
+            <svg className="my-auto" width="30" height="30" viewBox="0 0 22 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.5H21" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M1 5H16" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+
                 <h1 className="my-auto">Menu</h1>
             </div>
         </div>
