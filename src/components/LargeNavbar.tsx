@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 function Navbar({handlestate}:any){
     return(
         <>
-        <div className="h-24 font-[Inter] text-white bg-[#151615] overflow-hidden select-none flex justify-between">
+        <div className="h-24 font-[Inter] text-white bg-[#0f0f0f] overflow-hidden select-none flex justify-between">
             <a className="my-auto" href="#">
                 <div className="flex my-auto">
                     <img className="h-16 pl-8 px-3 my-2 border-r-[1px]" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1682879624/Uni_Logo_copy_n0fnmu.png" alt="logo" />
