@@ -1,1 +1,1 @@
-# This repo is just for prototyping! trying stuff and see what works and what doesn't.
+# This repo is just for prototyping! Trying stuff to see what works and what doesn't.
