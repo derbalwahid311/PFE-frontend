@@ -13,10 +13,10 @@ html{
 @font-face {
     font-family: GT-America-Bold;
     line-height: 1.15;
-    src: url("src/assets/fonts/GT-America-Standard-Bold-Trial.otf");
+    src: url("https://res.cloudinary.com/dbiudcrba/raw/upload/v1683209675/GT-America-Standard-Bold-Trial_ihl9h1.otf");
 }
 
 @font-face {
     font-family: GT-America-Regular;
-    src: url("src/assets/fonts/GT-America-Standard-Regular-Trial.otf");
+    src: url("https://res.cloudinary.com/dbiudcrba/raw/upload/v1683209637/GT-America-Standard-Regular-Trial_em2lsy.otf");
 }
