@@ -1,6 +1,10 @@
 import {AnimatePresence, motion} from "framer-motion"
 import { useState } from "react"
+import Demande from "./Demande";
+import Exemple from "./Exemple";
+import Inscri from "./Inscri";
 import Login from "./Login";
+import Rech from "./Rech";
 
 
 export default function Menu({state, handlestate}:any){
@@ -68,36 +72,36 @@ export default function Menu({state, handlestate}:any){
                     
                     <AnimatePresence>
                         {item1 && 
-                        <motion.div className="relative top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
+                        <motion.div className="relative ml-2 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
                             <Login></Login>
                         </motion.div>}
                     </AnimatePresence>
 
                     <AnimatePresence>
                         {item2 && 
-                        <motion.div className="relative top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                        <h1>Demande</h1>
+                        <motion.div className="relative ml-2 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
+                        <Demande/>
                         </motion.div>}
                     </AnimatePresence>
 
                     <AnimatePresence>
                         {item3 && 
-                        <motion.div className="relative top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <h1>Inscription</h1>
+                        <motion.div className="relative ml-2 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
+                            <Inscri/>
                         </motion.div>}
                     </AnimatePresence>
 
                     <AnimatePresence>
                         {item4 && 
-                        <motion.div className="relative top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <h1>Recherche</h1>
+                        <motion.div className="relative ml-2 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
+                            <Rech/>
                         </motion.div>}
                     </AnimatePresence>
 
                     <AnimatePresence>
                         {item5 && 
-                        <motion.div className="relative top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <h1>Exemple</h1>
+                        <motion.div className="relative ml-2 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
+                            <Exemple/>
                         </motion.div>}
                     </AnimatePresence>
 
