@@ -46,7 +46,7 @@ export default function Menu({state, handlestate}:any){
     return(
         <>
             <div className=" bg-[#0f0f0f] overflow-hidden select-none font-[Inter] grid content-between h-screen w-full">
-                <div className="flex pr-10  justify-between py-6 w-full -mb-8 h-22">
+                <div className="flex pr-10  justify-between py-6 w-full -mb-16 h-22">
                     <img className="h-16 px-10 " src="https://res.cloudinary.com/dbiudcrba/image/upload/v1682879624/Uni_Logo_copy_n0fnmu.png" alt="logo" />
                     <div onClick={handlestate} className="cursor-pointer  stroke-[0.3px] transition-all duration-300  hover:stroke-[0.8]  h-fit flex">
                         <h1 className=" text-white my-auto px-3" >Fermer</h1>
