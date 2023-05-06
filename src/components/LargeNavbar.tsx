@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 function Navbar({handlestate}:any){
     return(
         <>
-        <div className="h-24 font-[Inter] text-white bg-[#0f0f0f] overflow-hidden select-none flex justify-between">
+        <div className="h-24 font-[Inter] text-white  overflow-hidden select-none flex justify-between">
             <a className="my-auto" href="#">
                 <div className="flex my-auto">
                     <img className="h-16 pl-8 px-3 my-2 border-r-[1px]" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1682879624/Uni_Logo_copy_n0fnmu.png" alt="logo" />
@@ -18,11 +18,11 @@ function Navbar({handlestate}:any){
                     
                 </div>
             </a>
-            <div onClick={handlestate} className="flex cursor-pointer bg-[#2c302b] transition duration-200  hover:bg-[#474b46] px-8 space-x-5">
+            <div onClick={handlestate} className="flex cursor-pointer bg-[#181717] transition duration-200  hover:bg-[#2b2b2b] px-8 space-x-5">
 
-            <svg className="my-auto" width="30" height="30" viewBox="0 0 22 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 0.5H21" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
-                <path d="M1 5H16" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+            <svg className="my-auto" width="32" height="32" viewBox="0 0 22 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0H16" stroke="white" strokeWidth="1.4" strokeLinecap="round"/>
+                <path d="M1 6H16" stroke="white" strokeWidth="1.4" strokeLinecap="round"/>
             </svg>
 
                 <h1 className="my-auto">Menu</h1>
