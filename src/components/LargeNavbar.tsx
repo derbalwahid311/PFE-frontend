@@ -9,7 +9,7 @@ function Navbar({handlestate}:any){
         <div className="h-24 font-[Inter] text-white  overflow-hidden select-none flex justify-between">
             <a className="my-auto" href="#">
                 <div className="flex my-auto">
-                    <img className="h-16 pl-8 px-3 my-2 border-r-[1px]" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1682879624/Uni_Logo_copy_n0fnmu.png" alt="logo" />
+                    <img className="h-16 pl-8 px-3 my-2 border-r-[1px]" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1683442551/Off_Logo_zeimlq.png" alt="logo" />
                     
                     <div className="flex-col -space-y-1 my-auto overflow-clip  px-3">
                             <h1 className="text-xs">DEPARTMENT OF</h1>

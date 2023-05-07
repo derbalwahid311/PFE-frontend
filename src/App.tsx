@@ -44,7 +44,7 @@ export default function App() {
 
          </Media>
          
-         <div className='font-[Merriweather] z-10 px-32 selection:bg-white  selection:text-gray-900 w-screen mt-[21vh] text-white' >
+         <div className='font-[Merriweather] z-10 px-32 selection:bg-white  selection:text-gray-900 w-screen mt-[18vh] text-white' >
             <h1 className='text-5xl text-center'>{q}</h1>
             <h1 className='text-center mt-4 text-lg'>By - {a}</h1>
          </div>
