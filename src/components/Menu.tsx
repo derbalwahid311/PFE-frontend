@@ -67,7 +67,7 @@ export default function Menu({state, handlestate}:any){
                 <div className="absolute top-20 pointer-events-none bottom-0 left-0 z-10 right-0 h-24 bg-gradient-to-b from-[#0e0e0e]" ></div>
 
 
-                <motion.div initial={{y:0, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:0.1, delay:0.12 ,ease:"easeOut"}} className="flex fixed top-20  px-10 w-full h-fit  text-white">
+                <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.1, delay:0.12 ,ease:"easeOut"}} className="flex fixed top-20  px-10 w-full h-fit text-white">
 
                     <div className="flex-col w-fit h-[495px] tracking-tight mr-2 pr-10 leading-[1.1] text-[52px] font-[Merriweather] overflow-y-scroll py-24 space-y-7">
                         <motion.h1 onClick={handleItem1} initial={{y:-30, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.22, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item1===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item1 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>S'identifier<span className={openitem && item1 ? "block w-full transition-all duration-300 h-[0.5px] bg-gray-200": openitem && item1===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200"}></span></motion.h1>

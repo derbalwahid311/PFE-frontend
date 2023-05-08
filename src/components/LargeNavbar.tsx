@@ -47,7 +47,7 @@ export default function LargeNavbar(){
             <Navbar handlestate={handleMenu}></Navbar>
             <AnimatePresence>
                 {open && 
-                <motion.div className="overflow-hidden absolute top-0 left-0 right-0"  initial={{y:"-100vh" }} transition={{duration:0.3, ease:"easeInOut"}} animate={{y:"0vh"}} exit={{y:"-100vh", transition:{duration:0.3, ease:"easeOut"}}}>
+                <motion.div className="overflow-hidden absolute top-0 left-0 right-0"  initial={{y:"-100vh" }} transition={{duration:0.3, ease:"easeOut"}} animate={{y:"0vh"}} exit={{y:"-100vh", transition:{duration:0.3, ease:"easeOut"}}}>
                     <Menu state={open} handlestate={handleMenu}></Menu>
                 </motion.div>}
             </AnimatePresence>
