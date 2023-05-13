@@ -9,12 +9,12 @@ html{
     /*background-color: #080E06;*/
     /*background-color: white;  */
     background-color: rgba(0, 0, 0, .3);
-    background-image: url("https://res.cloudinary.com/dbiudcrba/image/upload/v1683405680/photo1683405253_dwhggh.jpg");
+    /*background-image: url("https://res.cloudinary.com/dbiudcrba/image/upload/v1683405680/photo1683405253_dwhggh.jpg");*/ 
     /*background-image: url("https://res.cloudinary.com/dbiudcrba/image/upload/v1683405946/photo1683405636_g2x9ia.jpg");*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode:darken ;
-    background-position: center 0;
+    background-position: center 0;*/
 }
 
 @font-face {
