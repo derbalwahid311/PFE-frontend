@@ -28,6 +28,11 @@ html{
     src: url("https://res.cloudinary.com/dbiudcrba/raw/upload/v1683209637/GT-America-Standard-Regular-Trial_em2lsy.otf");
 }
 
+@font-face {
+    font-family: Canela-Deck-Regular;
+    src: url("https://res.cloudinary.com/dbiudcrba/raw/upload/v1684071324/CanelaDeck-Regular-Trial_ftb32w.otf");
+}
+
 ::-webkit-scrollbar{
     width: 8px;
 }
