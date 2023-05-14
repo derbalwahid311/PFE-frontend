@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 function Navbar({handlestate}:any){
     return(
         <>
-        <div className="h-24 font-[Inter] sticky text-white  overflow-hidden select-none flex justify-between">
+        <div className="h-24 font-[Inter] sticky text-white overflow-hidden select-none flex justify-between">
             <a className="my-auto" href="#">
                 <div className="flex my-auto">
                     <img className="h-16 pl-8 px-3 my-2 border-r-[1px]" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1683442551/Off_Logo_zeimlq.png" alt="logo" />
@@ -32,23 +32,27 @@ function Navbar({handlestate}:any){
     )
 }
 
+interface NavProps {
+    setState :(state: boolean) => void;
+}
 
-
-export default function LargeNavbar({setState}:any){
+export default function LargeNavbar(props:NavProps){
     const [open, setOpen] = useState(false)
-    const [showPage, setShowPage] = useState(true);
+    const {setState} = props;
 
+    function handlePage (arg:boolean) {
+        setState(arg);
+    }
 
     function handleMenu(){
-        if(open === false) {setOpen(true);setState(false)}
-        else {setOpen(false);setState(true)}
+        if(open === false) {setOpen(true);handlePage(false)}
+        else {setOpen(false);handlePage(true)}
     }
 
 
 
     return(
         <>
-            
             <Navbar  handlestate={handleMenu}></Navbar>
             <AnimatePresence>
                 {open && 
