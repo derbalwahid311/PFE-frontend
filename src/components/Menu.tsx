@@ -51,7 +51,7 @@ export default function Menu({state, handlestate}:any){
     
     return(
         <>
-            <div className=" bg-[#0e0e0e] overflow-hidden select-none font-[Inter] grid content-between h-screen w-full">
+            <div className=" bg-[#0e0e0e] overscroll-none overflow-hidden select-none font-[Inter] grid content-between h-[100%] w-[100%]">
                 <div className="flex pr-10 bg-gradient-to-b from-[#0e0e0e] justify-between py-6 w-full -mb-16 h-22">
                     <img className="h-16 px-10 " src="https://res.cloudinary.com/dbiudcrba/image/upload/v1683442551/Off_Logo_zeimlq.png" alt="logo" />
                     <div onClick={handlestate} className="cursor-pointer  stroke-[0.3px] transition-all duration-300  hover:stroke-[0.8]  h-fit flex">
