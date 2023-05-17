@@ -44,26 +44,26 @@ export default function LargeWrapper(){
                 <div className="w-full text-[#1e1e1e]  mt-16 flex justify-center space-x-16">
                   
                      <div className="w-80 h-fit cursor-pointer bg-gray-300 group overflow-hidden hover:bg-white hover:bg-opacity-100 transition duration-200 bg-opacity-40 tracking-wide">
-                        <div className="transition duration-300 overflow-hidden group-hover:scale-105">
+                        <div className="transition duration-300 overflow-hidden group-hover:scale-110">
                            <img className="h-fit" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1684071267/mobile-07_ukvefi.jpg" alt="" />
                         </div>
-                        <h1 className="px-6 pt-10  text-3xl">Kadiour Zoubir</h1>
+                        <h1 className="px-6 pt-10 group w-fit text-3xl">Kadiour Zoubir<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-[2px] bg-[#1e1e1e]"></span></h1>
                         <p className="mb-10 px-6 pt-4 tracking-normal text-lg font-[GT-America-Regular]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mattis tellus. Suspendisse ante diam, gravida id maximus eu, imperdiet at leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
                      </div>
                      
                      <div className="w-80 h-fit cursor-pointer bg-gray-300 group overflow-hidden hover:bg-white hover:bg-opacity-100 transition duration-200 bg-opacity-40 tracking-wide">
-                        <div className="transition duration-300 overflow-hidden group-hover:scale-105">
+                        <div className="transition duration-300 overflow-hidden group-hover:scale-110">
                            <img className="h-fit" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1684071683/mobile-05_bnrctz.jpg" alt="" />
                         </div>
-                        <h1 className="px-6 pt-10  text-3xl">Test Bnadem</h1>
+                        <h1 className="px-6 pt-10 group w-fit text-3xl">Test Bnadem<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-[2px] bg-[#1e1e1e]"></span></h1>
                         <p className="mb-10 px-6 pt-4 tracking-normal text-lg font-[GT-America-Regular]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mattis tellus. Suspendisse ante diam, gravida id maximus eu, imperdiet at leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
                      </div>
                      
                      <div className="w-80 h-fit cursor-pointer bg-gray-300 group overflow-hidden hover:bg-white hover:bg-opacity-100 transition duration-200 bg-opacity-40 tracking-wide">
-                        <div className="transition duration-300 overflow-hidden group-hover:scale-105">
+                        <div className="transition duration-300 overflow-hidden group-hover:scale-110">
                            <img className="h-fit" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1684075302/mobile-06_fcyjmu.jpg" alt="" />
                         </div>
-                        <h1 className="px-6 pt-10  text-3xl">Another Bnadem</h1>
+                        <h1 className="px-6 pt-10 w-fit group text-3xl">Another Bnadem<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-[2px] bg-[#1e1e1e]"></span></h1>
                         <p className="mb-10 px-6 pt-4 tracking-normal text-lg font-[GT-America-Regular]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mattis tellus. Suspendisse ante diam, gravida id maximus eu, imperdiet at leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
                      </div>
                      
