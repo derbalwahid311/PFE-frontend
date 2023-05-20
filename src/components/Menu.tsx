@@ -16,16 +16,17 @@ export default function Menu({state, handlestate}:any){
     const [item5, setItem5] = useState(false);
     const [item6, setItem6] = useState(false);
     const [openitem, setOpenitem] = useState(false);
+    const [bg, setBg] = useState("bg-[#0e0e0e]")
 
 
     function handleItem1(){
-        if(item1 === false){setOpenitem(true);setItem1(true);setItem2(false);setItem3(false);setItem4(false);setItem5(false);setItem6(false)}
-        else {setItem1(false);setOpenitem(false)}
+        if(item1 === false){setOpenitem(true);setBg("bg-no-repeat bg-cover bg-[url('https://res.cloudinary.com/dbiudcrba/image/upload/v1683405680/photo1683405253_dwhggh.jpg')]");setItem1(true);setItem2(false);setItem3(false);setItem4(false);setItem5(false);setItem6(false)}
+        else {setItem1(false);setBg("bg-[#0e0e0e]");setOpenitem(false)}
     }
 
     function handleItem2(){
-        if(item2 === false){setOpenitem(true);setItem2(true);setItem1(false);setItem3(false);setItem4(false);setItem5(false);setItem6(false)}
-        else {setItem2(false);setOpenitem(false)}
+        if(item2 === false){setOpenitem(true);setBg("bg-no-repeat bg-cover bg-[url('https://res.cloudinary.com/dbiudcrba/image/upload/v1683405680/photo1683405253_dwhggh.jpg')]");setItem2(true);setItem1(false);setItem3(false);setItem4(false);setItem5(false);setItem6(false)}
+        else {setItem2(false);setBg("bg-[#0e0e0e]");setOpenitem(false)}
     }
 
     function handleItem3(){
@@ -47,11 +48,16 @@ export default function Menu({state, handlestate}:any){
         if(item6 === false){setOpenitem(true);setItem6(true);setItem1(false);setItem2(false);setItem3(false);setItem4(false);setItem5(false)}
         else {setItem6(false);setOpenitem(false)}
     }
-
+    
+    const myStyle = {
+        background: "linear-gradient(rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.8)), url('https://res.cloudinary.com/dbiudcrba/image/upload/v1683405680/photo1683405253_dwhggh.jpg')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+    }
     
     return(
         <>
-            <div className=" bg-[#0e0e0e] overscroll-none overflow-hidden select-none font-[Inter] grid content-between h-[100%] w-[100%]">
+            <div style={bg !== "bg-[#0e0e0e]" ? myStyle : {}} className={`${bg} overscroll-none overflow-hidden select-none font-[Inter] grid content-between h-[100%] w-[100%]`}>
                 <div className="flex pr-10 bg-gradient-to-b from-[#0e0e0e] justify-between py-6 w-full -mb-16 h-22">
                     <img className="h-16 px-10 " src="https://res.cloudinary.com/dbiudcrba/image/upload/v1683442551/Off_Logo_zeimlq.png" alt="logo" />
                     <div onClick={handlestate} className="cursor-pointer  stroke-[0.3px] transition-all duration-300  hover:stroke-[0.8]  h-fit flex">
@@ -64,18 +70,14 @@ export default function Menu({state, handlestate}:any){
                         </svg>
                     </div>
                 </div>
-                <div className="absolute top-20 pointer-events-none bottom-0 left-0 z-10 right-0 h-24 bg-gradient-to-b from-[#0e0e0e]" ></div>
+                {/* <div className="absolute top-20 pointer-events-none bottom-0 left-0 z-10 right-0 h-24 bg-gradient-to-b from-[#0e0e0e]" ></div>*/}
 
 
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.1, delay:0.12 ,ease:"easeOut"}} className="flex fixed top-20  px-10 w-full h-fit text-white">
 
                     <div className="flex-col w-fit h-[495px] tracking-tight mr-2 pr-10 leading-[1.1] text-[52px] font-[Merriweather] overflow-y-scroll py-24 space-y-7">
                         <motion.h1 onClick={handleItem1} initial={{y:-30, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.22, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item1===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item1 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>S'identifier<span className={openitem && item1 ? "block w-full transition-all duration-300 h-[0.5px] bg-gray-200": openitem && item1===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200"}></span></motion.h1>
-                        <motion.h1 onClick={handleItem2} initial={{y:-31, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.24, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item2===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item2 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>Demande<span className={openitem && item2 ? "block  w-full transition-all duration-300 h-[0.5px] bg-gray-200": openitem && item2===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200"}></span></motion.h1>
-                        <motion.h1 onClick={handleItem3} initial={{y:-32, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.26, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item3===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item3 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>Inscription<span className={openitem && item3 ? "block  w-full transition-all duration-300 h-[0.5px] bg-gray-200": openitem && item3===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200" }></span></motion.h1>
-                        <motion.h1 onClick={handleItem4} initial={{y:-33, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.28, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item4===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item4 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>Recherche<span className={openitem && item4 ? "block  w-fulltransition-all duration-300 h-[0.5px] bg-gray-200": openitem && item4===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200" }></span></motion.h1>
-                        <motion.h1 onClick={handleItem5} initial={{y:-34, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.30, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item5===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item5 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>Exemple<span className={openitem && item5 ? "block  w-full transition-all duration-300 h-[0.5px] bg-gray-200": openitem && item5===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200" }></span></motion.h1>
-                        <motion.h1 onClick={handleItem6} initial={{y:-36, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.32, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item6===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item6 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>Test<span className={openitem && item6 ? "block  w-full transition-all duration-300 h-[0.5px] bg-gray-200": openitem && item6===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200" }></span></motion.h1>
+                        <motion.h1 onClick={handleItem2} initial={{y:-30, opacity:0}} animate={{y:0, opacity:1}} transition={{delay:0.22, duration:0.28, opacity:{duration:0.7, delay:0.15, ease:"easeOut"}, ease:"easeOut"}} className={openitem && item2===false ? "cursor-pointer text-[#8996a0] text-opacity-75 hover:text-white group w-fit  transition-colors duration-200" : openitem && item2 ? "cursor-pointer text-white group w-fit transition-colors duration-200" : "cursor-pointer  text-white group w-fit transition-colors duration-200"}>Admin<span className={openitem && item2 ? "block w-full transition-all duration-300 h-[0.5px] bg-gray-200": openitem && item2===false ? "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px]" : "block max-w-0 group-hover:max-w-full transition-all duration-300 h-[0.5px] bg-gray-200"}></span></motion.h1>
                     </div>
                     
                     <AnimatePresence>
@@ -88,45 +90,17 @@ export default function Menu({state, handlestate}:any){
                     <AnimatePresence>
                         {item2 && 
                         <motion.div className="relative ml-2 mt-24 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <Demande/>
+                            <a href="https://www.backend.com/admin/">Site Admin</a>
                         </motion.div>}
                     </AnimatePresence>
 
-                    <AnimatePresence>
-                        {item3 && 
-                        <motion.div className="relative ml-2 mt-24 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <Inscri/>
-                        </motion.div>}
-                    </AnimatePresence>
-
-                    <AnimatePresence>
-                        {item4 && 
-                        <motion.div className="relative ml-2 mt-24 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <Rech/>
-                        </motion.div>}
-                    </AnimatePresence>
-
-                    <AnimatePresence>
-                        {item5 && 
-                        <motion.div className="relative ml-2 mt-24 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <Exemple/>
-                        </motion.div>}
-                    </AnimatePresence>
-
-                    <AnimatePresence>
-                        {item6 && 
-                        <motion.div className="relative ml-2 mt-24 top-0 bottom-0 right-0 left-10" initial={{x:"-25px",opacity:0}} exit={{x:"-30px",opacity:0, transition:{duration:0}}} transition={{duration:0.2, delay:0.1}} animate={{x:"0px",opacity:1}}>
-                            <h1>Test</h1>
-                        </motion.div>}
-                    </AnimatePresence>
 
                     
-
                 </motion.div>
 
-                <div className="absolute top-[480px] pointer-events-none bottom-0 left-0 z-0 right-0 h-24 bg-gradient-to-t from-[#0e0e0e]" ></div>
+                {/*<div className="absolute top-[480px] pointer-events-none bottom-0 left-0 z-0 right-0 h-24 bg-gradient-to-t from-[#0e0e0e]" ></div>*/}
                 
-                <div className="flex border-t-[1px] z-10 text-lg select-none border-[#535355] space-x-8 w-full font-[GT-America-Regular] h-[88px] text-white px-11">
+                <div className="flex border-t-[1px] bg-[#0e0e0e] z-10 text-lg select-none border-[#535355] space-x-8 w-full font-[GT-America-Regular] h-[88px] text-white px-11">
                     <div className="flex space-x-8 h-full ">
                         <h1 className="my-auto text-[#8996a0] ">Liens utiles</h1>
                         <svg className="my-auto" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">

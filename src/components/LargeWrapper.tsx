@@ -29,9 +29,9 @@ export default function LargeWrapper(){
     return(
         <>
         
-        <div className='h-[100vh] bg-no-repeat bg-cover bg-[url("https://res.cloudinary.com/dbiudcrba/image/upload/v1683405680/photo1683405253_dwhggh.jpg")] overflow-hidden'>
+        <div className='h-[100vh] bg-no-repeat bg-cover bg-[url("https://www.harvard.edu/wp-content/uploads/2023/04/052418_Com_SM_3033-2000x1333.jpg")] overflow-hidden'>
          <LargeNavbar setState={setIsShowed}></LargeNavbar>
-            <div className='font-[Canela-Deck-Regular]  mt-32 px-32 selection:bg-white selection:text-[#1e1e1e] w-screen text-white' >
+            <div className='font-[Canela-Deck-Regular]  mt-52 px-32 selection:bg-white selection:text-[#1e1e1e] w-screen text-white' >
                <h1 className='text-5xl text-center'>{q}</h1>
                <h1 className='text-center mt-4 text-lg'>By - {a}</h1>
             </div>
@@ -71,7 +71,7 @@ export default function LargeWrapper(){
             </div>
 
             <footer className="h-44 w-full select-none text-[#8996a0] font-[GT-America-Regular] pt-10 bg-[#0e0e0e]">
-            <img className="h-20 mx-auto -mb-6  w-fit " src="https://res.cloudinary.com/dbiudcrba/image/upload/v1683442551/Off_Logo_zeimlq.png" alt="" />
+            <img className="h-20 mx-auto -mb-6" src="https://res.cloudinary.com/dbiudcrba/image/upload/v1683442551/Off_Logo_zeimlq.png" alt="" />
                <div className="flex h-fit mx-auto px-16 space-x-10 justify-between">
                   <h1 className="my-auto">2023 - By Derbal Techach And BINOME</h1>
                   <div className="flex space-x-10 my-auto">
